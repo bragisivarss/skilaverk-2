@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(237, 246, 252);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+nav {
+  display: grid;
+  height: 2rem;
+  background-color: rgba(116, 255, 255, 0.529);
+  grid-template-columns: 2.5fr 2.5fr 2.5fr;
+}
+
+h1 {
+  font-weight: 500;
+  font-family: "Playfair Display", "Poppins", sans-serif;
+  font-size: 2.2rem;
+}
+
+span {
+  font-family: "Playfair Display", "Poppins", sans-serif;
+  font-weight: 700;
+  display: none;
+}
+
+header {
+  background-color: bisque;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3rem;
+  color: rgb(140, 0, 255);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display", "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.form {
+  padding: 10px;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  border: solid 0.5px rgba(116, 255, 255, 0.529);
+  flex-direction: column;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: rgb(214, 214, 255);
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.select {
+  font-family: "Playfair Display", "Poppins", sans-serif;
+  padding-bottom: 2px;
+  text-align: center;
+  margin: 1rem 3rem;
+  border: 0.2px solid rgba(116, 176, 255, 0.762);
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+input {
+  font-family: "Playfair Display", "Poppins", sans-serif;
+  margin: 0 3rem;
+  border: 0.2px solid rgba(116, 176, 255, 0.762);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+textarea {
+  font-family: "Playfair Display", "Poppins", sans-serif;
+  margin: 0 3rem;
+  border: 0.2px solid rgba(116, 176, 255, 0.762);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.submit-btn {
+  margin: 0 3rem;
+  border: 0.2px solid rgba(116, 176, 255, 0.762);
+  background-color: rgb(175, 160, 255);
+  border-radius: 3px;
+  padding: 3px 6px;
+  font-size: 1rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.email {
+  font-size: 17px;
+}
+
+.md {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 650px) {
+  .min-w-h {
+    display: flex;
+    padding: 0 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  span {
+    display: flex;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-family: "Playfair Display", "Poppins", sans-serif;
+  }
+}
+
+/* @media screen and (min-width: 700px) {
+  body {
+    min-height: 100vh;
+  }
+  .form {
+  }
+  .md {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .select {
+    margin: 0;
+    padding: 0;
+  }
+  input {
+    margin: 0;
+    padding: 0;
+    max-height: 2rem;
+  }
+  textarea {
+    margin: 0;
+    padding: 0;
+  }
+} */

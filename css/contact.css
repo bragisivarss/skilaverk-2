@@ -66,6 +66,9 @@ a {
   background-color: rgb(214, 214, 255);
   border-radius: 0.5rem;
   margin-bottom: 4rem;
+  min-width: 70%;
+  /* max-width: 700px; */
+  align-self: center;
 }
 
 .select {
@@ -107,7 +110,7 @@ textarea {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
@@ -140,30 +143,56 @@ footer {
     padding-bottom: 10px;
     font-family: "Playfair Display", "Poppins", sans-serif;
   }
+  .submit-btn {
+    /* align-self: center;
+    min-width: 50%;
+    max-width: max-content; */
+  }
 }
 
-/* @media screen and (min-width: 700px) {
-  body {
-    min-height: 100vh;
+@media screen and (max-height: 750px) {
+  .footer {
+    display: none;
   }
-  .form {
-  }
-  .md {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .select {
-    margin: 0;
-    padding: 0;
-  }
+}
+
+@media screen and (min-width: 700px) {
+  /* .form {
+    margin-bottom: 2rem;
+  } */
   input {
-    margin: 0;
-    padding: 0;
-    max-height: 2rem;
+    /* max-width: 70%;
+  align-self: center;
+  min-width: 50%;
+  max-width: max-content; */
   }
   textarea {
-    margin: 0;
-    padding: 0;
+    /* align-self: center;
+  min-width: 65%;
+  max-width: max-content; */
   }
-} */
+  .select {
+    /* align-self: center;
+  min-width: 50%;
+  max-width: max-content; */
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .form {
+    min-width: 800px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-height: 850px) {
+  .form {
+    min-height: 63vh;
+    justify-content: space-evenly;
+  }
+  .select {
+    margin-bottom: 3rem;
+  }
+}

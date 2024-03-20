@@ -135,10 +135,34 @@ footer {
     min-width: 100vw;
   }
   .menu {
-    max-width: fit-content;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
     margin: 1rem 1rem;
-    min-width: 47vw;
+  }
+  button {
+    border-radius: 0.7rem;
+    /* max-width: 300px; */
+    min-width: 50%;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .dish-name {
+    transform: translateY(-10px);
+    font-size: 2.2rem;
+    padding-top: 1rem;
+  }
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .photo {
+    margin-bottom: 1rem;
+  }
+  .menu {
+    max-width: 750px;
+    min-height: 300px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

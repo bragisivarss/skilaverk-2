@@ -175,14 +175,23 @@ footer {
   display: none;
 }
 
-@media screen and (min-height: 900px) {
+@media screen and (max-width: 400px) {
+  .center-main {
+    margin: 1rem 1rem;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-height: 1000px) {
   .hidden {
     margin: 2rem auto;
     display: block;
     justify-content: center;
   }
 }
-@media screen and (min-height: 900px) {
+@media screen and (min-height: 1000px) {
   @media screen and (min-width: 900px) {
     .flex-logo-p {
       margin-top: 6rem;
